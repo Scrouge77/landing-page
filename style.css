@@ -1,0 +1,466 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #efefef;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+
+span {
+    color:white;
+    font-size: 17px;
+}
+
+.h3 {
+    margin-left:27px;
+    color:white;
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+}
+
+.innerWrapper {
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* HEADER
+-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.pageHeader {
+    position: absolute;
+    width:100%;
+    padding: 16px 0;
+    
+}
+.pageHeader > .innerWrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLeft {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    width:100%;
+    
+}
+
+.navBox > ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navBox a{
+    color: white;
+    font-size: 14px;
+}
+
+.navRight {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.btnPrimary {
+    background-color: transparent;
+    border:none;
+   
+
+}
+
+.btnPrimary > a {
+    color: #fff;
+}
+
+.btnSecondary {
+    background-color: #fff;
+    width: 100px;
+    height:  30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border:none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.btnSecondary > a {
+    color:hsl(353, 100%, 62%);
+}
+
+.menuBtn { 
+    display: none;
+    background-color: transparent;
+    border: none;
+
+}
+
+/* BANNER -----------------------------------------------------------------------------------------------------------------------------*/
+
+.pageBanner {
+    background: url(./bg-pattern-intro-desktop.svg), hsla(353, 37%, 49%, 0.151);
+    background-position:-285px, 100px;
+    background-size: 200%;
+    background-color: rgb(192, 68, 68);
+    min-height: 800px;
+    display:flex;
+    align-items: center;
+    border-bottom-left-radius: 95px;
+   
+
+}
+
+.pageBanner > .innerWrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-color: rgba(187, 173, 196, 0);
+    min-height: 300px;
+    width:650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.bannerBattons {
+    background-color: rgba(136, 114, 121, 0);
+    width:60%;
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitle {
+    font-size: 43px;
+    letter-spacing:1px;
+    margin-bottom:13px;
+}
+
+.p {
+    letter-spacing: 2px;
+    margin-bottom:40px;
+}
+
+.leftButton {
+    font-size: 17px;
+    border-radius:30px;
+    border: none;
+    width:35%;
+    height:88%;
+    
+}
+.leftButton:hover {
+    font-size: 17px;
+    border-radius:30px;
+    border: none;
+    color:#d41a2a;
+    font-weight: bold;
+    transition: 1s;
+    }
+
+
+
+.rightButton {
+    font-size: 17px;
+    border-radius:30px;
+    border: 0.5px solid white;
+    width:35%;
+    height:88%;
+    background-color: transparent;
+    
+
+}
+
+.rightButton:hover {
+    font-size: 17px;
+    border-radius:30px;
+    border: 0.5px solid white;
+    color:#ffffff;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/*ABOUT-------------------------------------------------------------------------------------------------------------*/
+
+.pageAbout {
+    background-color: rgb(224, 199, 201);
+    min-height: 800px;
+    text-align: center;
+    padding:50px 0;
+}
+
+.pageAbout > .innerWrapper {
+    display: flex;
+}
+.aboutLeft {
+    margin-top:60px;
+    background-color: rgba(88, 96, 207, 0);
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-direction: column;
+}
+.mainText {
+    font-size: 42px;
+    padding-top:130px;
+    padding-bottom:100px;
+}
+
+.aboutRight {
+    margin-top:60px;
+    background-color: rgba(71, 23, 57, 0);
+    height:600px;
+    width:50%;
+}
+
+.aboutRight > img {
+    width: 77%;
+    position:relative;
+    top:-50px;
+    
+    
+}
+
+.aboutBox {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:90%;
+    height:40%;
+    background-color: rgba(184, 171, 171, 0);
+}
+
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:20px;
+    color:hsl(240, 10%, 16%);
+}
+
+.textBottom {
+    font-size:19px;
+    color:rgb(204, 105, 121);
+   
+}
+
+/*NEWSLETTER ---------------------------------------------------------------------------------------------------------------------*/
+
+.pageNewsletter {
+    background-color: hsl(240, 10%, 16%);
+    position:relative;
+    z-index:0;
+    overflow: hidden;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    
+}
+
+.pageNewsletter > .innerWrapper {
+    display: flex;
+    align-items: center;
+    gap:30px;
+    
+}
+
+.pageNewsletter > img {
+    position: absolute;
+    width:1100px;
+    top:-550px;
+    left:-30px;
+    z-index:0;
+}
+
+.phonesImg {
+    z-index:1;
+    width:100%;
+    height:800px;
+    object-fit: contain;
+}
+
+.newsletterText {
+    color:white;
+
+}
+.newsletterText > h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    
+}
+.newsletterText > span {
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+/*PRODUCT--------------------------------------------------------------------------------------------------------------*/
+.pageProduct > .innerWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:30px;
+    padding:70px 0;
+}
+
+
+/*FOOTER---------------------------------------------------------------------------------------------------------------*/
+.pageFooter {
+    background-color: black;
+    color:#fff;
+    padding: 30px 0px;
+}
+.pageFooter > .innerWrapper {
+    display: flex;
+}
+.footerBox, .footerLogo {
+    flex:1;
+}
+.pageFooter ul {
+    list-style-type: none;
+}
+.pageFooter a {
+    color:#fff;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+.pageFooter span {
+    font-weight: 700;
+}
+
+
+
+.menuWrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    width:100%;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .menuBtn {
+        display: block;
+    }
+    .menuWrapper {
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        min-height:80vh;
+        top:53%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        max-width: 350px;
+        box-shadow: 0px 8px 10px 0.5px black;
+        border-radius: 8px;
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+
+    .menuWrapper a {
+        color:rgb(197, 31, 31);
+        font-weight: 700;
+
+    }
+
+    .navRight > .btnSecondary {
+        background: rgb(224,122,122);
+        background: linear-gradient(90deg, rgba(224,122,122,1) 0%, rgba(222,98,98,1) 18%, rgba(224,90,90,1) 44%, rgba(227,45,45,1) 77%, rgba(237,29,29,1) 91%, rgba(255,0,0,0.7567401960784313) 100%);
+    }
+
+    .navRight > .btnSecondary a {
+            color:#fff;
+    }
+    .navRight {
+        flex-direction: column;
+        border-top:1px solid black;
+        padding:30px;
+        width: 90%;
+    }
+    .navLeft {
+        width: initial;
+    }
+    .navBox ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner > .mainTitle {
+        font-size: 30px;
+    }
+
+    .banner > .p {
+        font-size: 14px;
+    }
+    .rightButton, .leftButton {
+        width:103px;
+        
+    }
+    
+    .pageAbout > .innerWrapper {
+        flex-direction: column-reverse;
+    }
+    .aboutRight {
+        width: initial;
+        height: initial;
+    }
+    .aboutLeft {
+        width:initial;
+    }
+    .pageNewsletter > .innerWrapper {
+        flex-direction: column;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+    .pageProduct > .innerWrapper {
+        flex-direction: column;
+    }
+    .pageFooter > .innerWrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        
+    }
+    
+}
+
+
+.showMenu {
+    display: flex;
+}
+
+
+
